@@ -1,24 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Home from "../Pages/Home";
+import About from "./About";
 
 const Navbar = () => {
   return (
-    <header>
+    <nav className="nav-contain">
+      <div className="block-nav"></div>
       <ul>
         <li>
-          <NavLink to="/">Accueil</NavLink>{" "}
+          <NavLink to="/">Accueil</NavLink>
         </li>
         <li>
-          <NavLink to="/about">A propos</NavLink>{" "}
+          <Link to={<About />}>A propos</Link>
         </li>
         <li>
-          <NavLink to="/portfolio">Portfolio</NavLink>{" "}
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>{" "}
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
-    </header>
+    </nav>
   );
 };
 

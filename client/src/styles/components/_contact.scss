@@ -1,0 +1,20 @@
+.form-container {
+    label {
+        padding: 10px 0 10px 0;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input, textarea {
+        border: 1px solid red;
+        width: 500px;
+    }
+    .btn-form {
+        padding: 20px;
+        border: 1px solid red;
+        border-radius: 20px;
+        margin: 10px;
+        width: 20%;
+    }
+}

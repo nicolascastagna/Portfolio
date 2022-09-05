@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    max-width: 900px;
+    h5 {
+        padding: 10px;
+        margin: 0 10px 0 0;
+        border: 2px solid grey;
+        border-radius: 30px;
+        line-break: normal;
+        &:hover {
+            transition: 0.8s;
+            background: #A0A0A0;
+        }
+    }
+}

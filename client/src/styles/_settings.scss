@@ -10,7 +10,8 @@
 $font-1: "Montserrat", sans-serif;
 $font-2: "Russo One";
 
-$background-1: #2C3E50;
+$background-1: #1d1d1d;
+$background-2: #181818;
 $color-1: #FFFFFF;
 
 * {
@@ -22,13 +23,21 @@ $color-1: #FFFFFF;
     outline: none;
     border: none;
     text-decoration: none;
-    color: $color-1;
-    background-color: $background-1;
 }
 #root {
-    max-width: 1440px;
     margin: 0 auto;
 }
-h1 {
+h3, h4 {
     font-family: $font-2;
+}
+
+.home-container {
+    min-width: 840px;
+}
+
+.grid {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
