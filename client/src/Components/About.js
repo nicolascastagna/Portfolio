@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="container-about grid">
+    <div className="container-about grid" id="about">
       <h3>Qui suis-je ?</h3>
       <p>
         Lorem ipsum dolor sit amet. Qui dolorem blanditiis vel internos illum et

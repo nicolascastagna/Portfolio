@@ -1,7 +1,9 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import Home from "../Pages/Home";
+import { HashLink as Link } from "react-router-hash-link";
+import Projects from "./Projects";
 import About from "./About";
+import Contact from "./Contact";
+import { useState } from "react";
 
 const Navbar = () => {
   return (
@@ -9,16 +11,33 @@ const Navbar = () => {
       <div className="block-nav"></div>
       <ul>
         <li>
-          <NavLink to="/">Accueil</NavLink>
+          <Link to="/#" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            Accueil
+          </Link>
         </li>
         <li>
-          <Link to={<About />}>A propos</Link>
+          <Link
+            to="/#about"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            Qui suis-je ?{" "}
+          </Link>
         </li>
         <li>
-          <NavLink to="/portfolio">Portfolio</NavLink>
+          <Link
+            to="#projects"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            Mes projets
+          </Link>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <Link
+            to="#contact"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

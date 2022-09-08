@@ -8,7 +8,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap')}
 
 $font-1: "Montserrat", sans-serif;
-$font-2: "Russo One";
+$font-2: "Russo One", sans-serif;
 
 $background-1: #1d1d1d;
 $background-2: #181818;
@@ -24,7 +24,7 @@ $color-1: #FFFFFF;
     border: none;
     text-decoration: none;
 }
-#root {
+body {
     margin: 0 auto;
 }
 h3, h4 {

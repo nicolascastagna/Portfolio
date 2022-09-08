@@ -2,7 +2,7 @@ import React from "react";
 import About from "../Components/About";
 import Contact from "../Components/Contact";
 import Header from "../Components/Header";
-import Portfolio from "../Components/Portfolio";
+import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <About />
       <Skills />
-      <Portfolio />
+      <Projects />
       <Contact />
     </div>
   );

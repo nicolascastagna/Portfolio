@@ -1,6 +1,9 @@
 import React from "react";
 
 const Skills = () => {
+
+  
+
   return (
     <div className="container-skills grid">
       <h3>Mes compétences / Technos</h3>
@@ -17,7 +20,7 @@ const Skills = () => {
         <h5>MySQL</h5>
         <h5>TypeScript</h5>
       </div>
-      <h3>Outils</h3>
+      <h4>Outils</h4>
       <div className="container-tools list">
         <h5>Visual Studio Code</h5>
         <h5>Git</h5>
@@ -25,12 +28,12 @@ const Skills = () => {
         <h5>WordPress</h5>
         <h5>Elementor</h5>
       </div>
-      <h3>Soft Skills</h3>
+      <h4>Soft Skills</h4>
       <div className="container-soft list">
         <h5>Curieux</h5>
         <h5>Autonome</h5>
-        <h5>Texte</h5>
-        <h5>Texte</h5>
+        <h5>Perséverant</h5>
+        <h5>Sens de la communication</h5>
       </div>
     </div>
   );

@@ -1,3 +1,17 @@
+.container-skills {
+    h3 {
+        font-family: $font-2;
+        padding: 30px 0 25px 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h4 {
+        padding: 15px 0 12px 0;
+        font-style: italic;
+        max-width: 140px;
+    }
+}
+
 .list {
     display: flex;
     flex-direction: row;
@@ -5,13 +19,20 @@
     max-width: 900px;
     h5 {
         padding: 10px;
+        max-height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-break: auto;
         margin: 0 10px 0 0;
-        border: 2px solid grey;
-        border-radius: 30px;
+        border: 2px solid #2a2a2a;
+        border-radius: 10px;
         line-break: normal;
+        font-size: 14px;
         &:hover {
-            transition: 0.8s;
-            background: #A0A0A0;
+            transition: 0.2s;
+            transform: scale(1.05);
+            background: #ababab;
         }
     }
 }

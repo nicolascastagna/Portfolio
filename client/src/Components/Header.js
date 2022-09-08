@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         <div className="text-contain">
           <h2>Bonjour !</h2>
@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container picture__container">
         <img src="./images/profil.png" alt="" />
       </div>
-      <div className="polygon"></div>
+      <div className="scroll-bottom"></div>
     </header>
   );
 };
