@@ -1,11 +1,8 @@
 import React from "react";
 
 const Skills = () => {
-
-  
-
   return (
-    <div className="container-skills grid">
+    <section className="container-skills grid">
       <h3>Mes compétences / Technos</h3>
       <h4>Languages</h4>
       <div className="container-tech list">
@@ -35,7 +32,7 @@ const Skills = () => {
         <h5>Perséverant</h5>
         <h5>Sens de la communication</h5>
       </div>
-    </div>
+    </section>
   );
 };
 

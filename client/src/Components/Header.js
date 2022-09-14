@@ -11,7 +11,7 @@ const Header = () => {
         </div>
       </div>
       <div className="container picture__container">
-        <img src="./images/profil.png" alt="" />
+        <img src="./images/profil.webp" alt="" />
       </div>
       <div className="scroll-bottom"></div>
     </header>

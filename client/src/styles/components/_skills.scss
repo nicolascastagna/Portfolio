@@ -25,14 +25,15 @@
         text-overflow: ellipsis;
         line-break: auto;
         margin: 0 10px 0 0;
-        border: 2px solid #2a2a2a;
         border-radius: 10px;
         line-break: normal;
         font-size: 14px;
+        color: $color-1;
+        background: $color-2;
+        font-weight: 500;
         &:hover {
             transition: 0.2s;
             transform: scale(1.05);
-            background: #ababab;
         }
     }
 }

@@ -89,7 +89,7 @@
     display: flex;
 }
 
-button {
+.btn-form {
     padding: 20px;
     background: white;
     color: $background-1;
@@ -104,7 +104,7 @@ button {
     z-index: 1;
     &:hover {
         z-index: 5;
-        color: white;
+        color: $color-1;
     }
     &:after {
     content: "";

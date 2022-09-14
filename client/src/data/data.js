@@ -1,0 +1,90 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Transformer une maquette en site web avec HTML et CSS",
+    description: [
+      "Intégrer du contenu conformément à une maquette et implémentez une interface responsive",
+    ],
+    languages: ["HTML", "CSS"],
+    picture: "/images/booki.webp",
+    link: "https://nicolascastagna.github.io/Nicolascastagna_2_012022/",
+    github: "https://github.com/nicolascastagna/Nicolascastagna_2_012022/",
+  },
+  {
+    id: 2,
+    title: "Dynamiser une page web avec des animations CSS",
+    description: [
+      ["Mettre en œuvre des effets CSS graphiques avancés"],
+      ["Assurer la cohérence graphique d'un site web"],
+      ["Mettre en place son environnement Front-End"],
+      ["Mettre en place une structure de navigation pour un site web"],
+      [
+        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+      ],
+    ],
+    languages: ["HTML", "CSS", "SASS"],
+    picture: "/images/ohmyfood.webp",
+    link: "https://nicolascastagna.github.io/Nicolascastagna_3_07032022/",
+    github: "https://github.com/nicolascastagna/Nicolascastagna_3_07032022/",
+  },
+  {
+    id: 3,
+    title: "Optimisation d'un site web existant",
+    description: [
+      ["Réaliser une recherche des bonnes pratiques en développement web"],
+      ["Optimiser la taille et la vitesse d’un site web"],
+      ["Écrire un code HTML et CSS maintenable"],
+      ["Optimiser le référencement d'un site web"],
+      ["Assurer l'accessibilité d'un site web"],
+    ],
+    languages: ["SEO", "Accessibilité", "Performances"],
+    picture: "/images/panthere.webp",
+    link: "https://nicolascastagna.github.io/Nicolascastagna_4_042022/",
+    github: "https://github.com/nicolascastagna/Nicolascastagna_4_042022",
+  },
+  {
+    id: 4,
+    title: "Construire un site e-commerce",
+    description: [
+      ["Valider des données issues de sources externes"],
+      ["Gérer des événements JavaScript"],
+      ["Créer un plan de test pour une application"],
+      ["Interagir avec un web service grâce à JavaScript"],
+    ],
+    languages: ["JavaScript"],
+    picture: "/images/kanap.webp",
+    link: "",
+    github: "https://github.com/nicolascastagna/Nicolas_Castagna_05_05_2022",
+  },
+  {
+    id: 5,
+    title:
+      "Construction d'une API sécurisée pour une application d'avis gastronomiques",
+    description: [
+      [
+        "Implémenter un modèle logique de données conformément à la réglementation RGPD et OWASP",
+      ],
+      ["Mettre en oeuvre des opérations CRUD de manière sécurisée"],
+      ["Stocker des données de manière sécurisée"],
+    ],
+    languages: ["Node.js", "Express", "MongoDB"],
+    picture: "/images/piiquante.webp",
+    link: "",
+    github: "https://github.com/nicolascastagna/Nicolas_Castagna_06_06_2022",
+  },
+  {
+    id: 6,
+    title: "Créez un réseau social d'entreprise",
+    description: [
+      ["Développer l’interface d’un site web grâce à un framework front-end"],
+      ["Authentifier un utilisateur et maintenir sa session"],
+      [
+        "Implémenter un stockage de données sécurisé en utilisant une base de données",
+      ],
+    ],
+    languages: ["React", "Node.js", "Express", "MySQL", "Sequelize"],
+    picture: "/images/groupomania.webp",
+    link: "",
+    github: "https://github.com/nicolascastagna/Nicolas_Castagna_07_06_2022",
+  },
+];

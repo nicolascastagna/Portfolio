@@ -37,9 +37,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="form-container grid" id="contact">
+    <footer className="form-container grid" id="contact">
       <h3>Contact</h3>
-      <footer className="contain-footer">
+      <div className="contain-footer">
         <div className="container-info">
           <div className="contact-info">
             <p>07 50 27 92 16</p>
@@ -55,7 +55,7 @@ const Contact = () => {
                 window.location.replace("https://github.com/nicolascastagna")
               }
             >
-              <img src="./images/icon-github.png" alt="icon-github" />
+              <img src="./images/icon-github.webp" alt="icon-github" />
             </div>
             <div
               className="contact-info icon"
@@ -69,7 +69,7 @@ const Contact = () => {
                 )
               }
             >
-              <img src="./images/icon-linkedin.png" alt="icon-linkedin" />
+              <img src="./images/icon-linkedin.webp" alt="icon-linkedin" />
             </div>
           </div>
         </div>
@@ -119,8 +119,8 @@ const Contact = () => {
           </form>
           <div className="form-message"></div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
 

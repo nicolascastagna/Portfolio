@@ -9,7 +9,7 @@ header {
 .header__container {
     width: 50%;
     background: $background-1;
-    color: white;
+    color: $color-1;
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
@@ -52,7 +52,7 @@ header::after {
         content: "";
         clip-path: polygon(0 100%, 100% 100%, 0 0);
         height: 65px;
-        background: #FFFFFF;
+        background: $color-1;
         position: absolute;
         bottom: -2px;
         left: 0;
