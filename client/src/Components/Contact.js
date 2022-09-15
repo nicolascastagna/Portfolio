@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { NavLink } from "react-router-dom";
 
 const Contact = () => {
+  // const [sendForm, setSendForm] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -23,7 +23,7 @@ const Contact = () => {
           formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
           setTimeout(() => {
             formMess.innerHTML = "";
-          }, 2500);
+          }, 3500);
         },
         (error) => {
           console.log(error.text);
@@ -31,7 +31,7 @@ const Contact = () => {
             "<p class='error'>Une erreur s'est produite, veuillez réessayer</p>";
           setTimeout(() => {
             formMess.innerHTML = "";
-          }, 2500);
+          }, 3500);
         }
       );
   };

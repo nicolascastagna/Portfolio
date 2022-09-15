@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { projects } from "../data/data";
-import { isEmpty } from "./Utils";
 
 const CardProject = ({ project }) => {
   const [data, setData] = useState([project]);
 
-  console.log(project.link);
   return (
     <div className="card-template">
       <div className="card-title">

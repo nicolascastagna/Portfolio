@@ -1,32 +1,40 @@
 import React from "react";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="nav-contain">
       <div className="block-nav"></div>
-      <ul>
+      <ul className={`nav-items ${isOpen && "open"}`}>
         <li>
-          <HashLink smooth to="/#">
+          <Link smooth to="/#" onClick={() => setIsOpen(!isOpen)}>
             Accueil
-          </HashLink>
+          </Link>
         </li>
         <li>
-          <HashLink smooth to="/#about">
+          <Link smooth to="/#about" onClick={() => setIsOpen(!isOpen)}>
             Qui suis-je ?{" "}
-          </HashLink>
+          </Link>
         </li>
         <li>
-          <HashLink smooth to="#projects">
+          <Link smooth to="#projects" onClick={() => setIsOpen(!isOpen)}>
             Mes projets
-          </HashLink>
+          </Link>
         </li>
         <li>
-          <HashLink smooth to="#contact">
+          <Link smooth to="#contact" onClick={() => setIsOpen(!isOpen)}>
             Contact
-          </HashLink>
+          </Link>
         </li>
       </ul>
+      <div
+        className={`nav-toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="bar"></div>
+      </div>
     </nav>
   );
 };

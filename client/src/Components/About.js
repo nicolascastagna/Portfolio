@@ -29,7 +29,7 @@ const About = () => {
           <button className="download-cv">
             Télécharger mon CV
             <div className="icon-cv">
-              <span class="material-symbols-outlined icon-download">
+              <span className="material-symbols-outlined icon-download">
                 file_download
               </span>
             </div>

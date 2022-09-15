@@ -84,7 +84,7 @@ export const projects = [
     ],
     languages: ["React", "Node.js", "Express", "MySQL", "Sequelize"],
     picture: "/images/groupomania.webp",
-    link: "",
+    link: "https://urlz.fr/j2f2",
     github: "https://github.com/nicolascastagna/Nicolas_Castagna_07_06_2022",
   },
 ];
