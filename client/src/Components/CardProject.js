@@ -5,31 +5,35 @@ const CardProject = ({ project }) => {
 
   return (
     <div className="card-template">
-      <div className="card-title">
-        <h5>{project.title}</h5>
+      <div className="container-block-title">
+        <div className="card-title">
+          <h5>{project.title}</h5>
+        </div>
+        <div className="card-picture">
+          <img src={project.picture} alt={project.title} />
+        </div>
       </div>
-      <div className="card-picture">
-        <img src={project.picture} alt={project.title} />
-      </div>
-      <div className="card-languages">
-        <h4>Technos utilisées :</h4>
-        <ul className="list-languages">
-          {project.languages.map((languages, i) => (
-            <li className="languages" key={i}>
-              <span>{project.languages[i]}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="card-description">
-        <h4>Objectifs :</h4>
-        <ul className="list-description">
-          {project.description.map((description, i) => (
-            <li className="description" key={i}>
-              - {project.description[i]}
-            </li>
-          ))}
-        </ul>
+      <div className="container-height">
+        <div className="card-languages">
+          <h4>Technos utilisées :</h4>
+          <ul className="list-languages">
+            {project.languages.map((languages, i) => (
+              <li className="languages" key={i}>
+                <span>{project.languages[i]}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="card-description">
+          <h4>Objectifs :</h4>
+          <ul className="list-description">
+            {project.description.map((description, i) => (
+              <li className="description" key={i}>
+                - {project.description[i]}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="card-container-link">
         <div className="card-git">

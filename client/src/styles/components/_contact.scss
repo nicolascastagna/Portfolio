@@ -8,11 +8,18 @@
 
 .contain-footer {
     display: flex;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
     .container-info {
         width: 37%;
         opacity: 0.85;
         line-height: 2;
         letter-spacing: 0.5px;
+        @media screen and (max-width: 768px) {
+            margin: 0 20px 25px 25px;
+            width: 90%;
+        }
         .contain-icon {
             cursor: pointer;
             flex-direction: row;
@@ -38,6 +45,9 @@
     width: 50%;
     display: block;
     position: relative;
+    @media screen and (max-width: 768px) {
+       width: 100%;
+    }
     ul li.half {
         width: 49%;
         clear: none;
@@ -47,6 +57,9 @@
         margin-bottom: 10px;
         overflow: hidden;
         display: flex;
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
     input[type="text"], input[type="email"] {
         width: 100%;
@@ -74,6 +87,9 @@
         float: right;
         padding: 20px 0;
         margin-right: 40px;
+        @media screen and (max-width: 425px) {
+            margin-right: 20px;
+        }
     }
     input[type="text"], input[type="email"], textarea {
         border-bottom: 1px solid rgba($color: #ababab, $alpha: 0.5); 
@@ -90,6 +106,9 @@
 
 .align-li {
     display: flex;
+    @media screen and (max-width: 425px) {
+        display: block;
+    }
 }
 
 .btn-form {

@@ -82,7 +82,7 @@ export const projects = [
         "Implémenter un stockage de données sécurisé en utilisant une base de données",
       ],
     ],
-    languages: ["React", "Node.js", "Express", "MySQL", "Sequelize"],
+    languages: ["React", "Redux", "Node.js", "Express", "MySQL", "Sequelize"],
     picture: "/images/groupomania.webp",
     link: "https://urlz.fr/j2f2",
     github: "https://github.com/nicolascastagna/Nicolas_Castagna_07_06_2022",

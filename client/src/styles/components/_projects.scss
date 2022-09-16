@@ -19,6 +19,9 @@
             background: $color-1;
             box-shadow: 1px 1px 3px rgba($background-2, 0.7);
             border-radius: 5px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
             &:hover {
                 transition: 0.5s;
                 transform: scale(1.01);
@@ -38,9 +41,13 @@
                 max-width: 100%;
                 height: 130px;
                 margin: auto;
+                object-fit: cover;
+                @media screen and (max-width: 425px) {
+                    height: 100%;
+                }
             }
             .card-description {
-                height: 170px;
+                min-height: 175px;
                & h4 {
                     padding: 10px 0 10px 0;
                 }
@@ -51,6 +58,22 @@
             .card-languages {
                 & h4 {
                     padding: 0 0 10px 0;
+                }
+            }
+            .container-block-title {
+                height: 185px;
+                @media screen and (max-width: 400px) {
+                    height: auto;
+                }
+            }
+            .container-height {
+                height: 270px;
+                @media screen and (max-width: 992px) {
+                    height: 330px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width: 400px) {
+                    height: 380px;
                 }
             }
         }
@@ -91,15 +114,22 @@
             display: flex;
             flex-direction: row;
             margin: 10px 0;
+            width: 100%;
+            flex-wrap: wrap;
+            & .languages {
+                margin: 0 10px 10px 0;
+            }
             & span {
-                padding: 8px;
+                padding: 9px;
                 background: $color-2;
                 color: $color-1;
                 max-height: 40px;
-                margin: 0 10px 0 0;
                 font-size: 16px;
                 font-weight: 500;
                 border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
             }
         }
     }
@@ -113,7 +143,9 @@
     background: $color-1;
     position: absolute;
     width: 100%;
-    min-width: 835px;
+    @media screen and (max-width: 992px) {
+        height: 30px;
+    }
 }
 .container-projects::after {
     content: "";
@@ -122,5 +154,7 @@
     background: $color-1;
     position: absolute;
     width: 100%;
-    min-width: 835px;
+    @media screen and (max-width: 992px) {
+        height: 0;
+    }
 }
