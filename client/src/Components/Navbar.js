@@ -1,9 +1,27 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setWidth(window.innerWidth);
+
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", changeWidth);
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  });
+
   return (
     <nav className="nav-contain">
       <div className="block-nav"></div>

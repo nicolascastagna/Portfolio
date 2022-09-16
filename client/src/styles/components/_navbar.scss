@@ -118,6 +118,11 @@
     }
 }
 
+.menu-open {
+  opacity: 0.6;
+}
+
+
 .nav-contain a::after {
   content: "";
     height: 2px;
