@@ -24,6 +24,7 @@ const About = () => {
         <Link
           to="/images/curriculum_vitae_nicolas_castagna.pdf"
           target="_blank"
+          norefferer
           download
         >
           <button className="download-cv">

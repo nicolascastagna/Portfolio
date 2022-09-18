@@ -2,9 +2,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className="container-skills grid">
+    <section className="container-skills grid" id="skills">
       <h3>Mes compétences / Technos</h3>
-      <h4>Languages</h4>
+      <h4>Technos</h4>
       <div className="container-tech list">
         <h5>HTML</h5>
         <h5>CSS / Sass</h5>

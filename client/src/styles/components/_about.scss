@@ -13,23 +13,44 @@
       text-align: center;
       padding: 35px 0 0 0;
       & button {
-        background: $color-2;
-        border-radius: 10px;
+        color: $background-1;
         padding: 12px;
-        color: $color-1;
         cursor: pointer;
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 500;
+        background: white;
         letter-spacing: 0.5px;
+        position: relative;
+        border: 2px solid $background-1;
         &:hover {
-          transition: 0.5s;
-          transform: scale(1.05);
+          z-index: 10;
+          color: $color-1;
+          & .icon-download {
+            color: white;
+          }
       }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0; bottom: 0; left: 0; right: 0;
+        transition: 0.4s;
+        background: $background-1;
+        }
       }
       .icon-download {
-        color: $color-1;
+        color: $background-1;
         font-size: 28px;
       }
     }
+}
+
+.container-cv button::after {
+  height: 100%;
+  width: 0;
+}
+
+.container-cv button:hover::after {
+width: 100%;
 }

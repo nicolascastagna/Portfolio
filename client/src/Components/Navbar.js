@@ -33,12 +33,17 @@ const Navbar = () => {
         </li>
         <li>
           <Link smooth to="/#about" onClick={() => setIsOpen(!isOpen)}>
-            Qui suis-je ?{" "}
+            Qui suis-je ?
+          </Link>
+        </li>
+        <li>
+          <Link smooth to="/#skills" onClick={() => setIsOpen(!isOpen)}>
+            compétences
           </Link>
         </li>
         <li>
           <Link smooth to="#projects" onClick={() => setIsOpen(!isOpen)}>
-            Mes projets
+            projets
           </Link>
         </li>
         <li>

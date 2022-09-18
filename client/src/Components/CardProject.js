@@ -7,7 +7,7 @@ const CardProject = ({ project }) => {
     <div className="card-template">
       <div className="container-block-title">
         <div className="card-title">
-          <h5>{project.title}</h5>
+          <h4>{project.title}</h4>
         </div>
         <div className="card-picture">
           <img src={project.picture} alt={project.title} />

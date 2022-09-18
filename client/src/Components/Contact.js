@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useEffect, useRef, useState } from "react";
+import emailjs, { sendForm } from "@emailjs/browser";
 
 const Contact = () => {
-  // const [sendForm, setSendForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     const formMess = document.querySelector(".form-message");
 
+    setIsLoading(true);
     emailjs
       .sendForm(
         "service_3524d2o",
@@ -18,12 +19,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setIsLoading(false);
           form.current.reset();
           formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
-          setTimeout(() => {
-            formMess.innerHTML = "";
-          }, 3500);
+          // setTimeout(() => {
+          //   formMess.innerHTML = "";
+          // }, 3500);
         },
         (error) => {
           console.log(error.text);
@@ -35,6 +36,10 @@ const Contact = () => {
         }
       );
   };
+
+  // useEffect(() => {
+  //   emailjs && setIsLoading(false);
+  // }, [emailjs]);
 
   return (
     <footer className="form-container grid" id="contact">
@@ -75,29 +80,29 @@ const Contact = () => {
         </div>
         <div className="contact-form">
           <form ref={form} id="form" autoComplete="off" onSubmit={sendEmail}>
+            <ul className="align-li">
+              <li className="half animated required">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nom*"
+                  required
+                  autoComplete="off"
+                />
+                <label className="input__label"></label>
+              </li>
+              <li className="half animated required">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                  autoComplete="off"
+                />
+                <label className="input__label"></label>
+              </li>
+            </ul>
             <ul>
-              <div className="align-li">
-                <li className="half animated required">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Nom*"
-                    required
-                    autoComplete="off"
-                  />
-                  <label className="input__label"></label>
-                </li>
-                <li className="half animated required">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email*"
-                    required
-                    autoComplete="off"
-                  />
-                  <label className="input__label"></label>
-                </li>
-              </div>
               <li className="msg animated required">
                 <textarea
                   name="message"
@@ -111,7 +116,13 @@ const Contact = () => {
                   <div>
                     <span className="background"></span>
                     <span className="base"></span>
-                    <span className="text">Envoyer le message</span>
+                    {isLoading ? (
+                      <span disabled className="text disable-btn">
+                        En cours d'envoi
+                      </span>
+                    ) : (
+                      <span className="text">Envoyer le message</span>
+                    )}
                   </div>
                 </button>
               </li>
