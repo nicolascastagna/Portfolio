@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs, { sendForm } from "@emailjs/browser";
 
 const Contact = () => {
@@ -22,9 +22,9 @@ const Contact = () => {
           setIsLoading(false);
           form.current.reset();
           formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
-          // setTimeout(() => {
-          //   formMess.innerHTML = "";
-          // }, 3500);
+          setTimeout(() => {
+            formMess.innerHTML = "";
+          }, 3500);
         },
         (error) => {
           console.log(error.text);
@@ -36,10 +36,6 @@ const Contact = () => {
         }
       );
   };
-
-  // useEffect(() => {
-  //   emailjs && setIsLoading(false);
-  // }, [emailjs]);
 
   return (
     <footer className="form-container grid" id="contact">
@@ -55,6 +51,7 @@ const Contact = () => {
           <div className="contain-icon">
             <div
               className="contact-info icon"
+              aria-label="Accédez à mon compte GitHub"
               onClick={() =>
                 window.open("https://github.com/nicolascastagna", "_blank") ||
                 window.location.replace("https://github.com/nicolascastagna")
@@ -64,6 +61,7 @@ const Contact = () => {
             </div>
             <div
               className="contact-info icon"
+              aria-label="Accédez à mon compte Linkedin"
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/nicolas-castagna-259bb61b1/",
@@ -83,36 +81,46 @@ const Contact = () => {
             <ul className="align-li">
               <li className="half animated required">
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   placeholder="Nom*"
                   required
                   autoComplete="off"
+                  aria-required="true"
                 />
-                <label className="input__label"></label>
+                <label htmlFor="name" className="input__label"></label>
               </li>
               <li className="half animated required">
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="Email*"
                   required
                   autoComplete="off"
+                  aria-required="true"
                 />
-                <label className="input__label"></label>
+                <label htmlFor="email" className="input__label"></label>
               </li>
             </ul>
             <ul>
               <li className="msg animated required">
                 <textarea
+                  id="message"
                   name="message"
                   placeholder="Votre message*"
                   required
+                  aria-required="true"
                 />
-                <label className="input__label"></label>
+                <label htmlFor="message" className="input__label"></label>
               </li>
               <li className="submit animated">
-                <button className="btn-form" type="submit">
+                <button
+                  className="btn-form"
+                  aria-label="Envoyez les informations"
+                  type="submit"
+                >
                   <div>
                     <span className="background"></span>
                     <span className="base"></span>

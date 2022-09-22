@@ -24,10 +24,13 @@ const About = () => {
         <Link
           to="/images/curriculum_vitae_nicolas_castagna.pdf"
           target="_blank"
-          norefferer
+          norefferer="true"
           download
         >
-          <button className="download-cv">
+          <button
+            className="download-cv"
+            aria-label="Téléchargez mon curriculum vitae"
+          >
             Télécharger mon CV
             <div className="icon-cv">
               <span className="material-symbols-outlined icon-download">
