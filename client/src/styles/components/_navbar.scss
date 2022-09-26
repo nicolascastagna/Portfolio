@@ -5,9 +5,9 @@
     display: flex;
     z-index: 10;
     .block-nav {
-        width: 50%;
+        width: 39%;
         @media screen and (max-width: 992px) {
-          width: 35%;
+          width: 20%;
         }
         @media screen and (max-width: 768px) {
           display: block;
@@ -15,7 +15,7 @@
         }
     }
     .nav-items {
-        width: 50%;
+        width: 61%;
         max-width: 1200px;
         height: 55px;
         display: flex;
@@ -24,7 +24,7 @@
         align-items: center;
         text-transform: uppercase;
         @media screen and (max-width: 992px) {
-          width: 65%;
+          width: 80%;
         }
         @media screen and (max-width: 768px) {
           position: absolute;

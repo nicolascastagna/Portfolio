@@ -41,7 +41,11 @@ const Contact = () => {
     <footer className="form-container grid" id="contact">
       <h3>Contact</h3>
       <div className="contain-footer">
-        <div className="container-info">
+        <div
+          className="container-info"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div className="contact-info">
             <p>07 50 27 92 16</p>
           </div>

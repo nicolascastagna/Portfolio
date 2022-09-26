@@ -4,7 +4,12 @@ const CardProject = ({ project }) => {
   const [data, setData] = useState([project]);
 
   return (
-    <div className="card-template">
+    <div
+      className="card-template"
+      id="animTemplate"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div className="container-block-title">
         <div className="card-title">
           <h4>{project.title}</h4>
