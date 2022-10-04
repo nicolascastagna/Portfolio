@@ -87,4 +87,19 @@ export const projects = [
     link: "https://urlz.fr/j2f2",
     github: "https://github.com/nicolascastagna/Nicolas_Castagna_07_06_2022",
   },
+  {
+    id: 7,
+    title: "Création d'un blog avec Next.js",
+    description: [
+      ["Développer l’interface d’un site web grâce à un framework front-end"],
+      ["Construction d'une application web pré-rendu serveur"],
+      ["Récupérer les données d'une API"],
+      ["Optimiser le réferencement sur chacunes des pages"],
+      ["Déployer une application sur Vercel"],
+    ],
+    languages: ["Next.js", "React", "Node.js", "SEO", "Performances"],
+    picture: "/images/blog-dev.webp",
+    link: "https://training-next-js-eight.vercel.app/",
+    github: "https://github.com/nicolascastagna/Training-Next.js",
+  },
 ];
