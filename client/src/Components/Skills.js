@@ -16,13 +16,14 @@ const Skills = () => {
         <h5>MongoDB</h5>
         <h5>MySQL</h5>
         <h5>TypeScript</h5>
+        <h5>Next.js</h5>
       </div>
       <h4>Outils</h4>
       <div className="container-tools list">
         <h5>Visual Studio Code</h5>
         <h5>Git</h5>
         <h5>Npm</h5>
-        <h5>WordPress</h5>
+        <h5>WordPress Headless</h5>
         <h5>Elementor</h5>
       </div>
       <h4>Soft Skills</h4>

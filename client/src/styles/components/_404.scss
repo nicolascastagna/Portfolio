@@ -8,13 +8,14 @@
 
 .block-notFound {
     & h4 {
-        font-size: 20px;
+        font-size: 22px;
         padding: 12px;
     }
     & button {
         background: $color-1;
         padding: 10px;
         border: 2px solid $background-1;
-        font-size: 14px;
+        font-size: 16px;
+        cursor: pointer;
     }
 }
