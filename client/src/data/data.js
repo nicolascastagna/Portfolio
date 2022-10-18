@@ -102,4 +102,19 @@ export const projects = [
     link: "https://training-next-js-eight.vercel.app/",
     github: "https://github.com/nicolascastagna/Training-Next.js",
   },
+  {
+    id: 8,
+    title: "Création d'un clone AirBnb avec Next.js",
+    description: [
+      ["Construction d'une application web pré-rendu serveur"],
+      ["Récupéré les informations de la barre de recherche"],
+      ["Interface responsive avec Tailwind"],
+      ["Implémentez la fonctionnalité de date et calendrier avec le state"],
+      ["Intégrez une barre de chargement sur chacunes des pages"],
+    ],
+    languages: ["Next.js", "React", "SSR", "Performances"],
+    picture: "/images/clone-airbnb.png",
+    link: "https://airbnb-clone-apezv18g5-nicolascastagna.vercel.app/",
+    github: "https://github.com/nicolascastagna/Airbnb_Clone",
+  },
 ];
