@@ -114,7 +114,7 @@ export const projects = [
     ],
     languages: ["Next.js", "React", "SSR", "Performances"],
     picture: "/images/clone-airbnb.png",
-    link: "https://airbnb-clone-apezv18g5-nicolascastagna.vercel.app/",
+    link: "https://training-next-js-clone.vercel.app/",
     github: "https://github.com/nicolascastagna/Airbnb_Clone",
   },
 ];
