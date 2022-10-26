@@ -117,4 +117,18 @@ export const projects = [
     link: "https://training-next-js-clone.vercel.app/",
     github: "https://github.com/nicolascastagna/Airbnb_Clone",
   },
+  {
+    id: 9,
+    title: "Création d'une application web Meteo",
+    description: [
+      ["Transmettre des données entre composants"],
+      ["Interface mobile-first"],
+      ["Récupéré les données d'une API"],
+      ["Analysez et affichez les dates dans le bon fuseau horaire"],
+    ],
+    languages: ["Next.js", "React", "Sass"],
+    picture: "/images/meteo.svg",
+    link: "https://meteo-project-wine.vercel.app/",
+    github: "https://github.com/nicolascastagna/Meteo_Project",
+  },
 ];
