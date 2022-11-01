@@ -89,6 +89,21 @@ export const projects = [
   },
   {
     id: 7,
+    title: "Développer une landing page pour une agence",
+    description: [
+      ["Transmettre des données entre composants"],
+      ["Utilisation de React Router Dom"],
+      ["Intégration d'effets entre les pages avec Framer Motion"],
+      ["Ajouts d'animations SCSS"],
+      ["Déployer une application sur Netlify"],
+    ],
+    languages: ["React", "Sass"],
+    picture: "/images/fsagency.webp",
+    link: "https://fsagency.netlify.app/",
+    github: "https://github.com/nicolascastagna/Portfolio-Agency",
+  },
+  {
+    id: 8,
     title: "Création d'un blog avec Next.js",
     description: [
       ["Développer l’interface d’un site web grâce à un framework front-end"],
@@ -103,7 +118,7 @@ export const projects = [
     github: "https://github.com/nicolascastagna/Training-Next.js",
   },
   {
-    id: 8,
+    id: 9,
     title: "Création d'un clone AirBnb avec Next.js",
     description: [
       ["Construction d'une application web pré-rendu serveur"],
@@ -118,7 +133,7 @@ export const projects = [
     github: "https://github.com/nicolascastagna/Airbnb_Clone",
   },
   {
-    id: 9,
+    id: 10,
     title: "Création d'une application web Meteo",
     description: [
       ["Transmettre des données entre composants"],
@@ -132,7 +147,7 @@ export const projects = [
     github: "https://github.com/nicolascastagna/Meteo_Project",
   },
   {
-    id: 9,
+    id: 11,
     title: "Création d'un simple formulaire de connexion",
     description: [
       ["Mise en place de la méthodologie Test Driven Developpement"],
