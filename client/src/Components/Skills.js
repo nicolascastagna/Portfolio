@@ -14,6 +14,7 @@ const Skills = () => {
         <h5>TypeScript</h5>
         <h5>Next.js</h5>
         <h5>Tailwind</h5>
+        <h5>Jest</h5>
       </div>
       <h4>Back-end</h4>
       <div className="container-tech list">
@@ -27,6 +28,7 @@ const Skills = () => {
       <div className="container-tools list">
         <h5>Visual Studio Code</h5>
         <h5>Git</h5>
+        <h5>GitHub</h5>
         <h5>Npm</h5>
         <h5>WordPress</h5>
         <h5>Elementor</h5>

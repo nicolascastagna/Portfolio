@@ -113,7 +113,7 @@ export const projects = [
       ["Intégrez une barre de chargement sur chacunes des pages"],
     ],
     languages: ["Next.js", "React", "SSR", "Performances"],
-    picture: "/images/clone-airbnb.png",
+    picture: "/images/clone-airbnb.webp",
     link: "https://training-next-js-clone.vercel.app/",
     github: "https://github.com/nicolascastagna/Airbnb_Clone",
   },
@@ -130,5 +130,18 @@ export const projects = [
     picture: "/images/meteo.svg",
     link: "https://meteo-project-wine.vercel.app/",
     github: "https://github.com/nicolascastagna/Meteo_Project",
+  },
+  {
+    id: 9,
+    title: "Création d'un simple formulaire de connexion",
+    description: [
+      ["Mise en place de la méthodologie Test Driven Developpement"],
+      ["Testez le formulaire de connexion d'un point de vue utilisateur"],
+      ["Intégration de la bibliothèque React Testing library"],
+    ],
+    languages: ["React", "Jest", "React Testing Library"],
+    picture: "/images/jest.webp",
+    link: "",
+    github: "https://github.com/nicolascastagna/Project_TDD",
   },
 ];

@@ -9,15 +9,14 @@ const About = () => {
         Passionné par le monde de l'informatique depuis toujours, j'ai découvert
         le monde du développement web il y a quelques années et j'ai très
         rapidement été conquis, de manière autodidacte j'avais créé un blog sur
-        WordPress avec elementor et appris par la suite les bases du
-        développement. C'est alors qu'en fin 2021, j'entreprends une formation
-        par Openclassrooms de Développeur Web.
+        WordPress avec Elementor et appris par la suite les bases du
+        développement en HTML et CSS. C'est alors qu'en fin 2021, j'entreprends
+        une formation par Openclassrooms de Développeur Web.
       </p>
       <br />
       <p>
         Ayant terminé la formation depuis fin août, je suis à la recherche d'un
-        poste idéalement en alternance pour continuer vers une formation en tant
-        que Développeur d'applications JavaScript - React par Openclassrooms. Je
+        poste idéalement en alternance pour continuer vers ce même domaine. Je
         suis ouvert également à toutes autres opportunités.
       </p>
       <div className="container-cv">
