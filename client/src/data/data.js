@@ -129,7 +129,7 @@ export const projects = [
     ],
     languages: ["Next.js", "React", "SSR", "Performances"],
     picture: "/images/clone-airbnb.webp",
-    link: "https://training-next-js-clone.vercel.app/",
+    link: "https://nextjs-airbnb-clone.netlify.app/",
     github: "https://github.com/nicolascastagna/Airbnb_Clone",
   },
   {
@@ -158,5 +158,17 @@ export const projects = [
     picture: "/images/jest.webp",
     link: "",
     github: "https://github.com/nicolascastagna/Project_TDD",
+  },
+  {
+    id: 12,
+    title: "Un simple Quizz de 10 questions",
+    description: [
+      ["Intégration de TypeScript avec React"],
+      ["Ajout de la librairie Styled Components"],
+    ],
+    languages: ["React", "TypeScript", "Styled Components"],
+    picture: "/images/quizz-app.webp",
+    link: "https://quizz-app-react-ts.netlify.app/",
+    github: "https://github.com/nicolascastagna/Quizz-App",
   },
 ];
