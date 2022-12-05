@@ -171,4 +171,31 @@ export const projects = [
     link: "https://quizz-app-react-ts.netlify.app/",
     github: "https://github.com/nicolascastagna/Quizz-App",
   },
+  {
+    id: 13,
+    title: "Todo List",
+    description: [
+      ["Installation de l'environnement"],
+      ["Enregistrer dans le state l'information"],
+      ["Utilisation de composants natifs"],
+    ],
+    languages: ["React-Native"],
+    picture: "/images/todolist.png",
+    link: "",
+    github: "https://github.com/nicolascastagna/React-Native_Todo-app",
+  },
+  {
+    id: 14,
+    title: "Guess My Number",
+    description: [
+      ["Switcher d'écrans uniquement avec le state"],
+      ["Créé une logique de jeu et de réinitialisation"],
+      ["Lister les nombre devinés de l'appareil"],
+      ["Paramétrez une alerte en cas d'erreur"],
+    ],
+    languages: ["React-Native"],
+    picture: "/images/guess-number.png",
+    link: "",
+    github: "https://github.com/nicolascastagna/React-Native_Guess-Number",
+  },
 ];

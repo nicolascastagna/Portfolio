@@ -15,6 +15,7 @@ const Skills = () => {
         <h5>Next.js</h5>
         <h5>Tailwind</h5>
         <h5>Jest</h5>
+        <h5>React-Native</h5>
       </div>
       <h4>Back-end</h4>
       <div className="container-tech list">
