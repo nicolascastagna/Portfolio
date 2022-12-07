@@ -2,7 +2,7 @@ import React from "react";
 import CardProject from "./CardProject";
 import { projects } from "../data/data";
 
-const Portfolio = ({ project }) => {
+const Portfolio = () => {
   return (
     <section className="container-projects" id="projects">
       <div className="container-card grid">
