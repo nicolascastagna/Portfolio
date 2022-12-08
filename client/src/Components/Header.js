@@ -4,7 +4,6 @@ import { useInterval } from "react-use";
 const Header = () => {
   const frontend = "Front-End".split("");
   const freelance = "Freelance".split("");
-  const web = "Web".split("");
   const [items, setItems] = useState(frontend);
   const [count, setCount] = useState(0);
   const [play, setPlay] = useState(false);

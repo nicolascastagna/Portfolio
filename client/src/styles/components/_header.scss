@@ -7,7 +7,7 @@ header {
     width: 100%;
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        height: 60vh;
+        height: 510px;
     }
 }
 .header__container {
@@ -34,6 +34,12 @@ header {
                 font-size: 24px;
                 letter-spacing: 4px;
                 font-weight: 300;
+                @media screen and (max-width: 992px) {
+                    font-size: 22px;
+                }
+                @media screen and (max-width: 370px) {
+                    font-size: 20px;
+                }
             }
         }
         h1 {
@@ -59,6 +65,12 @@ header {
             letter-spacing: 4px;
             font-weight: 300;
             padding-bottom: 40px;
+            @media screen and (max-width: 992px) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: 370px) {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -117,20 +129,20 @@ header::after {
     70% {
         opacity: 0;
         transform: scale(2) translateY(-100px) skewY(10deg) skewX(01deg) rotateZ(30deg);
-        filter: blur(10px);
+        filter: blur(0px);
     }
     80% {
         opacity: 1;
         transform: scale(1) translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
-        filter: blur(0px);
+        filter: blur(10px);
     }
 }
 
 .anim-text {
-    display: inline-flex; 
+    display:inline-flex;
     flex-direction: row;
-    font-weight: bold;
      span {
+        font-weight: bold;
         animation: textDynamic 6s forwards infinite cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }

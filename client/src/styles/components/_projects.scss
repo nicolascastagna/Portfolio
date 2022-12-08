@@ -165,3 +165,22 @@
         height: 0;
     }
 }
+
+.filter-container {
+    width: 100%;
+    margin: 0 0 20px 0;
+    .active {
+        background: $background-1;
+        color: $color-1;
+        opacity: 1;
+        transition: 50ms;
+    }
+    button {
+        opacity: 0.9;
+        padding: 15px;
+        margin: 10px;
+        font-size: 14px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}
