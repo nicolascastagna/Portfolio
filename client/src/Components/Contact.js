@@ -55,17 +55,17 @@ const Contact = () => {
           <div className="contain-icon">
             <div
               className="contact-info icon"
-              aria-label="Accédez à mon compte GitHub"
+              aria-label="Accédez à mon profil GitHub"
               onClick={() =>
                 window.open("https://github.com/nicolascastagna", "_blank") ||
                 window.location.replace("https://github.com/nicolascastagna")
               }
             >
-              <img src="./images/icon-github.webp" alt="icon-github" />
+              <img src="./images/icon-github.webp" alt="icone github" />
             </div>
             <div
               className="contact-info icon"
-              aria-label="Accédez à mon compte Linkedin"
+              aria-label="Accédez à mon profil Linkedin"
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/nicolas-castagna-259bb61b1/",
@@ -76,7 +76,22 @@ const Contact = () => {
                 )
               }
             >
-              <img src="./images/icon-linkedin.webp" alt="icon-linkedin" />
+              <img src="./images/icon-linkedin.webp" alt="icone linkedin" />
+            </div>
+            <div
+              className="contact-info icon"
+              aria-label="Accédez à mon profil Malt"
+              onClick={() =>
+                window.open(
+                  "https://www.malt.fr/profile/nicolascastagna/",
+                  "_blank"
+                ) ||
+                window.location.replace(
+                  "https://www.malt.fr/profile/nicolascastagna/"
+                )
+              }
+            >
+              <img src="./images/malt-logo.svg" alt="icone malt" />
             </div>
           </div>
         </div>
