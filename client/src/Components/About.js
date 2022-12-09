@@ -40,9 +40,9 @@ const About = () => {
         l’occasion d’évoluer dans les <strong>technologies suivantes :</strong>
         <br />
         <br />- Front-End : HTML5, SASS/CSS, Tailwind, JavaScript, React, Redux,
-        Next.js <br />- Back-End : Node.js, Express, PHP <br />- Bases de
-        données: MongoDB, MySQL, Sequelize <br />- CMS: Wordpress, <br />-
-        Autre: Git, Jest, React Testing Library <br />
+        Next.js <br />- Back-End : Node.js, Express, PHP
+        <br />- Bases de données: MongoDB, MySQL, Sequelize <br />- CMS:
+        Wordpress, <br />- Autre: Git, Jest, React Testing Library <br />
         <br />
         <strong>Mes services :</strong> <br />
         <br />- Développement front-end from scratch,
