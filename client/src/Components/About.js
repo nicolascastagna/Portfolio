@@ -7,7 +7,7 @@ const About = () => {
       <h3>Qui suis-je ?</h3>
       <p>
         Je m'appelle Nicolas,{" "}
-        <strong>Développeur Web Front-end orienté React / Next.js</strong> et
+        <strong>Développeur Web Front-end spécialisé React / Next.js</strong> et
         freelance depuis peu sur la plateforme{" "}
         <strong
           style={{ borderBottom: "1px solid black", cursor: "pointer" }}
@@ -40,7 +40,7 @@ const About = () => {
         l’occasion d’évoluer dans les <strong>technologies suivantes :</strong>
         <br />
         <br />- Front-End : HTML5, SASS/CSS, Tailwind, JavaScript, React, Redux,
-        Next.js <br />- Back-End : Node.js, Express, PHP
+        Next.js, TypeScript <br />- Back-End : Node.js, Express, PHP
         <br />- Bases de données: MongoDB, MySQL, Sequelize <br />- CMS:
         Wordpress, <br />- Autre: Git, Jest, React Testing Library <br />
         <br />
@@ -58,7 +58,7 @@ const About = () => {
       <br />
       <p>
         Je suis ouvert également à toutes autres opportunités, comme un poste{" "}
-        <strong>salarié ou alternance.</strong>
+        <strong>salarié.</strong>
       </p>
       <div className="container-cv">
         <Link

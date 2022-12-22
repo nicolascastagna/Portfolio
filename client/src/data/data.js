@@ -212,4 +212,19 @@ export const projects = [
     link: "",
     github: "https://github.com/nicolascastagna/React-Native_Guess-Number",
   },
+  {
+    id: 15,
+    title: "Création d'un clone Slack",
+    description: [
+      ["Paramétrage de Firebase"],
+      ["Utilisation de Redux"],
+      ["S'authentifier avec Google Auth"],
+      ["Afficher les messages propre à chaque canal"],
+    ],
+    languages: ["React", "TypeScript", "Firebase", "styled-components"],
+    category: ["All", "fullstack"],
+    picture: "https://cdn.mos.cms.futurecdn.net/SDDw7CnuoUGax6x9mTo7dd.jpg",
+    link: "",
+    github: "https://github.com/nicolascastagna/Slack_Clone",
+  },
 ];
