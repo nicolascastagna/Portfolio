@@ -227,4 +227,33 @@ export const projects = [
     link: "",
     github: "https://github.com/nicolascastagna/Slack_Clone",
   },
+  {
+    id: 16,
+    title: "Création d'un ChatGPT",
+    description: [
+      ["Logique de message unique"],
+      ["Configuration de l'API OpenAI"],
+      ["Héberger le back sur render"],
+    ],
+    languages: ["JavaScript", "Node.js", "OpenAI"],
+    category: ["All", "fullstack"],
+    picture: "/images/open_ai.png",
+    link: "https://codex-snowy.vercel.app/",
+    github: "https://github.com/nicolascastagna/Project_OpenAI",
+  },
+  {
+    id: 17,
+    title: "Interface utilisateur Netflix",
+    description: [
+      ["Récupération des données de l'API TMDB"],
+      ["Intégration de Recoil"],
+      ["Fonctionnalité vidéo avec React Player"],
+      ["Implémentez différents types pour typescript"],
+    ],
+    languages: ["Next.js", "TypeScript", "Recoil"],
+    category: ["All", "front-end"],
+    picture: "/images/netflix.png",
+    link: "https://netflix-clone-next-010.vercel.app/",
+    github: "https://github.com/nicolascastagna/Netflix_Clone",
+  },
 ];

@@ -1,11 +1,24 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+
+  const ref = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
 
   useEffect(() => {
     const changeWidth = () => {
@@ -23,7 +36,12 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="nav-contain">
+    <nav className="nav-contain" ref={ref} onClick={handleClickOutside}>
+      {/* {isOpen && isComponentVisible ? (
+        <div style={{ border: "10px solid red" }}>ALOOO</div>
+      ) : (
+        <div>ALOOOOOOOO</div>
+      )} */}
       <div className="block-nav"></div>
       <ul className={`nav-items ${isOpen && "open"}`}>
         <li>
