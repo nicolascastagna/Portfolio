@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [width, setWidth] = useState<number>(window.innerWidth);
 
-  const ref = useRef(null);
+  const ref = useRef<null | HTMLDivElement>(null);
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: any) => {
     if (ref.current && !ref.current.contains(event.target)) {
       setIsOpen(false);
     }

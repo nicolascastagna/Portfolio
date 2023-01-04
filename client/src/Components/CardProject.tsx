@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-const CardProject = ({ project }) => {
+interface Props {
+  project: Project;
+}
+
+const CardProject = ({ project }: Props) => {
   const [data, setData] = useState([project]);
 
   return (
@@ -46,7 +50,7 @@ const CardProject = ({ project }) => {
             className="git icon-img"
             onClick={() =>
               window.open(project.github, "_blank") ||
-              window.location.replace(project.github)
+              window.location.replace(project.github as string)
             }
           >
             <img src="./images/icon-github.webp" alt="icon-github" />
@@ -62,7 +66,7 @@ const CardProject = ({ project }) => {
                   key={i}
                   onClick={() => {
                     window.open(project.link, "_blank") ||
-                      window.location.replace(project.link);
+                      window.location.replace(project.link as string);
                   }}
                 >
                   <img src="./images/icons-link.webp" alt="icon-link" key={i} />
@@ -74,7 +78,7 @@ const CardProject = ({ project }) => {
               key={i}
               onClick={() => {
                 window.open(project.link, "_blank") ||
-                  window.location.replace(project.link);
+                  window.location.replace(project.link as string);
               }}
             >
               <img src="./images/icons-link.webp" alt="icon-link" />

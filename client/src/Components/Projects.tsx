@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Portfolio = () => {
   const [filtered, setFiltered] = useState([]);
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState<string>("All");
 
   return (
     <section className="container-projects" id="projects">
@@ -16,7 +16,7 @@ const Portfolio = () => {
           activeCategory={activeCategory}
           setActiveCategory={setActiveCategory}
         />
-        {filtered.map((project) => (
+        {filtered.map((project: Project) => (
           <CardProject project={project} key={project.id} />
         ))}
       </div>

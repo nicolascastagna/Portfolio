@@ -2,10 +2,10 @@ import React, { useRef, useState } from "react";
 import emailjs, { sendForm } from "@emailjs/browser";
 
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const form = useRef();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formMess = document.querySelector(".form-message");
 
@@ -14,24 +14,24 @@ const Contact = () => {
       .sendForm(
         "service_3524d2o",
         "template_5q9yhz6",
-        form.current,
+        form?.current!,
         process.env.REACT_APP_ID
       )
       .then(
         (result) => {
           setIsLoading(false);
-          form.current.reset();
-          formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
+          form?.current?.reset();
+          formMess!.innerHTML = "<p class='success'>Message envoyé !</p>";
           setTimeout(() => {
-            formMess.innerHTML = "";
+            formMess!.innerHTML = "";
           }, 3500);
         },
         (error) => {
           console.log(error.text);
-          formMess.innerHTML =
+          formMess!.innerHTML =
             "<p class='error'>Une erreur s'est produite, veuillez réessayer</p>";
           setTimeout(() => {
-            formMess.innerHTML = "";
+            formMess!.innerHTML = "";
           }, 3500);
         }
       );
@@ -135,23 +135,27 @@ const Contact = () => {
                 <label htmlFor="message" className="input__label"></label>
               </li>
               <li className="submit animated">
-                <button
-                  className="btn-form"
-                  aria-label="Envoyez les informations"
-                  type="submit"
-                >
+                {isLoading ? (
                   <div>
                     <span className="background"></span>
                     <span className="base"></span>
-                    {isLoading ? (
-                      <span disabled className="text disable-btn">
-                        En cours d'envoi
-                      </span>
-                    ) : (
-                      <span className="text">Envoyer le message</span>
-                    )}
+                    <button disabled className="btn-form text disable-btn">
+                      En cours d'envoi
+                    </button>
                   </div>
-                </button>
+                ) : (
+                  <div>
+                    <span className="background"></span>
+                    <span className="base"></span>
+                    <button
+                      className="btn-form text"
+                      aria-label="Envoyez les informations"
+                      type="submit"
+                    >
+                      Envoyer le message
+                    </button>
+                  </div>
+                )}
               </li>
             </ul>
           </form>

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useInterval } from "react-use";
 
 const Header = () => {
-  const frontend = "Front-End".split("");
-  const freelance = "Freelance".split("");
-  const [items, setItems] = useState(frontend);
-  const [count, setCount] = useState(0);
-  const [play, setPlay] = useState(false);
+  const frontend: string[] = "Front-End".split("");
+  const freelance: string[] = "Freelance".split("");
+  const [items, setItems] = useState<string[]>(frontend);
+  const [count, setCount] = useState<number>(0);
+  const [play, setPlay] = useState<boolean>(false);
 
   useInterval(
     () => {
@@ -14,7 +14,7 @@ const Header = () => {
       setItems(frontend);
       setCount(count + 1);
 
-      if (count == 1) {
+      if (count === 1) {
         setCount(0);
         setItems(freelance);
       }

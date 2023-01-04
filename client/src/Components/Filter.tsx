@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { projects } from "../data/data";
 
-function Filter({ setActiveCategory, activeCategory, setFiltered }) {
+interface Props {
+  setActiveCategory: (category: string) => void;
+  activeCategory: string;
+  setFiltered: any;
+}
+
+function Filter({ setActiveCategory, activeCategory, setFiltered }: Props) {
   useEffect(() => {
     if (activeCategory === "All") {
       setFiltered(projects);
