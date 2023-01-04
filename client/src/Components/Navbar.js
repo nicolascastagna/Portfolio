@@ -37,11 +37,6 @@ const Navbar = () => {
 
   return (
     <nav className="nav-contain" ref={ref} onClick={handleClickOutside}>
-      {/* {isOpen && isComponentVisible ? (
-        <div style={{ border: "10px solid red" }}>ALOOO</div>
-      ) : (
-        <div>ALOOOOOOOO</div>
-      )} */}
       <div className="block-nav"></div>
       <ul className={`nav-items ${isOpen && "open"}`}>
         <li>
