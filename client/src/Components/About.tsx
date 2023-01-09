@@ -6,9 +6,11 @@ const About = () => {
     <section className="container-about grid" id="about">
       <h3>Qui suis-je ?</h3>
       <p>
-        Je m'appelle Nicolas,{" "}
-        <strong>Développeur Web Front-end spécialisé React / Next.js</strong> et
-        freelance depuis peu sur la plateforme{" "}
+        Je suis Nicolas,{" "}
+        <strong>
+          un développeur web front-end spécialisé en React / Next.js
+        </strong>{" "}
+        et freelance depuis peu sur la plateforme{" "}
         <strong
           style={{ borderBottom: "1px solid black", cursor: "pointer" }}
           onClick={() =>
@@ -24,36 +26,37 @@ const About = () => {
           Malt
         </strong>
         , je vous propose mes services et vous accompagne dans la réalisation de
-        votre projet. Passionné par l'informatique et plus précisement par le
-        développement web, j'ai réalisé une formation de Développeur Web par
-        Openclassrooms qui m'a permis d'obtenir un socle de connaissance solide.
+        votre projet. Passionné par le développement web, j'ai réalisé une
+        formation de développeur web par Openclassrooms qui m'a permis
+        d'acquérir un solide socle de connaissances.
         <br />
         <br />
-        J'ai très rapidement été attiré par le côté front-end et plus
-        précisement l'univers de React, avec tout ce qui gravite autour. Je
-        continue de m’instruire quotidiennement afin de répondre aux besoins de
-        ce secteur en constante évolution, je souhaite proposer à court terme
-        mes services en applications mobiles avec React-Native.
+        Mon intérêt pour le côté front-end et plus précisément pour l'univers de
+        React avec tout ce qui gravite autour, comme Next.js et TypeScript, m'a
+        poussé à me perfectionner quotidiennement afin de répondre aux besoins
+        du secteur en constante évolution.
         <br />
         <br />
-        Lors de mon parcours à Openclassrooms et en autodidacte j'ai eu
-        l’occasion d’évoluer dans les <strong>technologies suivantes :</strong>
+        <strong>Mes compétences incluent :</strong>
         <br />
-        <br />- Front-End : HTML5, SASS/CSS, Tailwind, JavaScript, React, Redux,
-        Next.js, TypeScript <br />- Back-End : Node.js, Express, PHP
+        <br />- Front-End : HTML5, Sass, Tailwind, styled-component JavaScript,
+        React, Redux, Next.js, TypeScript, Jest / React testing library <br />-
+        Back-End : Node.js, Express, PHP
         <br />- Bases de données: MongoDB, MySQL, Sequelize <br />- CMS:
-        Wordpress, <br />- Autre: Git, Jest, React Testing Library <br />
+        Wordpress, <br />- Outil de versionning: GitHub
         <br />
-        <strong>Mes services :</strong> <br />
+        <br />
+        <strong>Je vous propose des services tels que :</strong> <br />
         <br />- Développement front-end from scratch,
         <br />- Ajout d’une ou plusieurs pages React.js à votre site existant,
         <br />- Optimisation d'un site web existant,
         <br />- Résolution problème / bug technique,
-        <br />- Support technique,
-        <br />- Déploiement de l'application web, nom de domaine, <br />
+        <br />- Déploiement de l'application web (Netlify, Vercel) et nom de
+        domaine associés, <br />
         <br />
-        N'hésitez pas à me contacter afin qu'on discute de votre projet ou pour
-        tout renseignements complémentaires.
+        Si vous souhaitez discuter de votre projet ou obtenir des informations
+        supplémentaires n'hésitez pas à me contacter ! Au plaisir de commencer
+        une belle aventure ensemble !
       </p>
       <br />
       <p>
