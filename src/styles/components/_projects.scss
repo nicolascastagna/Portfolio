@@ -17,7 +17,7 @@
             padding: 20px;
             margin: 10px;
             background: $color-1;
-            box-shadow: 1px 1px 3px rgba($background-2, 0.7);
+            box-shadow: 1px 1px 3px rgba($background-1, 0.7);
             border-radius: 5px;
             @media screen and (max-width: 768px) {
                 width: 100%;
@@ -25,7 +25,7 @@
             &:hover {
                 transition: 0.5s;
                 transform: scale(1.01);
-                box-shadow: 1px 1px 3px rgba($background-2, 1);
+                box-shadow: 1px 1px 3px rgba($background-1, 1);
             }
             .card-title {
                 & h4 {

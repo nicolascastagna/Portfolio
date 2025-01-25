@@ -1,0 +1,54 @@
+.social-link {
+    display: inline-block;
+  
+    button {
+      position: relative;
+      padding: 12px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+  
+      .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, white, #5D7B6F);
+        border-radius: 0.75rem;
+        filter: blur(12px);
+        opacity: 0.2;
+        transition: opacity 0.3s ease;
+  
+        &hover {
+          opacity: 1;
+        }
+      }
+  
+      .inner-container {
+        position: relative;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(20px);
+        padding: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+  
+        &:hover {
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+  
+        .icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          color: #9ca3af;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
