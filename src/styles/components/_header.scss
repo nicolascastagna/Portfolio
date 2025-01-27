@@ -42,7 +42,7 @@ header {
                 padding-left: 10px;
             }
             span {
-                font-size: 24px;
+                font-size: 28px;
                 letter-spacing: 4px;
                 font-weight: 300;
                 padding-left: 10px;
@@ -57,7 +57,7 @@ header {
         h1 {
             font-weight: 400;
             padding-bottom: 15px;
-            font-size: 32px;
+            font-size: 36px;
             line-height: 1.5;
             letter-spacing: 2px;
             @media screen and (max-width: 425px) {
@@ -77,11 +77,12 @@ header {
             letter-spacing: 4px;
             font-weight: 300;
             padding-bottom: 40px;
+            font-size: 28px;
             @media screen and (max-width: 992px) {
-                font-size: 22px;
+                font-size: 26px;
             }
             @media screen and (max-width: 370px) {
-                font-size: 20px;
+                font-size: 24px;
             }
         }
     }
@@ -130,19 +131,19 @@ header {
     }
 }
 
-header::after {
-        content: "";
-        clip-path: polygon(0 100%, 100% 100%, 0 0);
-        height: 55px;
-        background: $color-1;
-        position: absolute;
-        bottom: -18px;
-        left: 0;
-        width: 100%;
-        @media screen and (max-width: 992px) {
-            height: 30px;
-        }
-}
+// header::after {
+//         content: "";
+//         clip-path: polygon(0 100%, 100% 100%, 0 0);
+//         height: 55px;
+//         background: $color-1;
+//         position: absolute;
+//         bottom: -18px;
+//         left: 0;
+//         width: 100%;
+//         @media screen and (max-width: 992px) {
+//             height: 30px;
+//         }
+// }
 
 // @keyframes textDynamic {
 //     50% {

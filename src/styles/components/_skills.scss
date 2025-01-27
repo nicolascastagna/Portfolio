@@ -8,7 +8,8 @@
     h4 {
         padding: 15px 0 12px 0;
         font-style: italic;
-        max-width: 140px;
+        text-align: center;
+        font-size: 22px;
     }
 }
 
@@ -16,21 +17,21 @@
     display: flex;
     flex-direction: row;
     padding: 10px 0 10px 0;
-    max-width: 900px;
-    @media screen and (max-width: 900px) {
-        flex-wrap: wrap;
-    }
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
     h5 {
-        padding: 10px;
+        padding: 10px 15px;
         max-height: 40px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         line-break: auto;
-        margin: 0 10px 10px 0;
-        border-radius: 10px;
+        margin: 0 12px 15px 0;
+        border-radius: 15px;
         line-break: normal;
-        font-size: 14px;
+        font-size: 18px;
         color: $color-1;
         background: $color-2;
         font-weight: 500;

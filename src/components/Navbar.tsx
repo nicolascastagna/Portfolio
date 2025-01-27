@@ -50,7 +50,7 @@ const Navbar = () => {
                         to="/#about"
                         onClick={() => setIsOpen(!isOpen)}
                     >
-                        Qui suis-je ?
+                        À propos
                     </Link>
                 </li>
                 <li>
