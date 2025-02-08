@@ -41,7 +41,6 @@ const Contact = () => {
     return (
         <footer className="form-container grid" id="contact">
             <h3 className="grid__title">Contact</h3>
-            <h1>Test des variables d'environnement</h1>
             <div className="contain-footer">
                 <div
                     className="container-info"
