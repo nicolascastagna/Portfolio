@@ -11,9 +11,7 @@ const Skills = () => {
                 <h5>JavaScript</h5>
                 <h5>React</h5>
                 <h5>Next.js</h5>
-                <h5>Redux</h5>
                 <h5>TypeScript</h5>
-                <h5>Next.js</h5>
                 <h5>React-Native</h5>
             </div>
             <h4>Back-end</h4>
@@ -23,8 +21,6 @@ const Skills = () => {
                 <h5>SQL</h5>
                 <h5>Twig</h5>
                 <h5>Node.js</h5>
-                <h5>Express</h5>
-                <h5>MongoDB</h5>
                 <h5>MySQL</h5>
             </div>
             <h4>Outils</h4>
@@ -33,11 +29,10 @@ const Skills = () => {
                 <h5>Behat</h5>
                 <h5>Jest</h5>
                 <h5>React Testing Library</h5>
+                <h5>Material UI</h5>
                 <h5>VsCode</h5>
                 <h5>Git</h5>
-                <h5>GitHub</h5>
                 <h5>WordPress</h5>
-                <h5>Elementor</h5>
                 <h5>UML</h5>
             </div>
             <h4>Soft Skills</h4>

@@ -2,16 +2,10 @@ import React, { useCallback, useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import CustomButton from "./generics/CustomButton";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import {
-    Github,
-    Linkedin,
-    Mail,
-    ExternalLink,
-    Instagram,
-    Sparkles,
-} from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Instagram } from "lucide-react";
 import SocialLink from "./generics/SocialLink";
 import AOS from "aos";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
@@ -125,8 +119,15 @@ const Header = () => {
     };
 
     return (
-        <header id="home" style={{ opacity: `${isLoaded ? 1 : 0}` }}>
-            {/* <div> */}
+        <header
+            id="home"
+            style={{ opacity: `${isLoaded ? 1 : 0}`, position: "relative" }}
+        >
+            <div className="scroll-bottom">
+                <Link smooth to="/#about">
+                    <KeyboardDoubleArrowDownIcon className="animate-bounce" />
+                </Link>
+            </div>
             <div
                 className="container header__container"
                 data-aos="fade-right"
@@ -189,8 +190,6 @@ const Header = () => {
             >
                 <DotLottieReact {...lottieOptions} />
             </div>
-            <div className="scroll-bottom"></div>
-            {/* </div> */}
         </header>
     );
 };

@@ -12,10 +12,10 @@ const Contact = () => {
         setIsLoading(true);
         emailjs
             .sendForm(
-                "service_3524d2o",
-                "template_5q9yhz6",
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
                 form?.current!,
-                process.env.REACT_APP_ID
+                process.env.REACT_APP_PUBLIC_KEY
             )
             .then(
                 (result) => {
@@ -41,6 +41,10 @@ const Contact = () => {
     return (
         <footer className="form-container grid" id="contact">
             <h3 className="grid__title">Contact</h3>
+            <h1>Test des variables d'environnement</h1>
+            <p>Service ID: {process.env.REACT_APP_SERVICE_ID}</p>
+            <p>Template ID: {process.env.REACT_APP_TEMPLATE_ID}</p>
+            <p>Public Key: {process.env.REACT_APP_PUBLIC_KEY}</p>
             <div className="contain-footer">
                 <div
                     className="container-info"
@@ -51,7 +55,7 @@ const Contact = () => {
                         <p>07 50 27 92 16</p>
                     </div>
                     <div className="contact-info">
-                        <p>74300 Cluses, France</p>
+                        <p>74800 St-Pierre-En-Faucigny, France</p>
                     </div>
                     <div className="contain-icon">
                         <div

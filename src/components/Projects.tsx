@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Portfolio = () => {
     const [filtered, setFiltered] = useState([]);
-    const [activeCategory, setActiveCategory] = useState<string>("All");
+    const [activeLanguage, setActiveLanguage] = useState<string>("All");
 
     return (
         <section className="container-projects" id="projects">
@@ -13,10 +13,10 @@ const Portfolio = () => {
                 <h3 className="grid__title">Mes Projets</h3>
                 <Filter
                     setFiltered={setFiltered}
-                    activeCategory={activeCategory}
-                    setActiveCategory={setActiveCategory}
+                    activeLanguage={activeLanguage}
+                    setActiveLanguage={setActiveLanguage}
                 />
-                {filtered.map((project: Project) => (
+                {filtered.map((project) => (
                     <CardProject project={project} key={project.id} />
                 ))}
             </div>
