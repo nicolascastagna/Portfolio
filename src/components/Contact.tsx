@@ -42,9 +42,6 @@ const Contact = () => {
         <footer className="form-container grid" id="contact">
             <h3 className="grid__title">Contact</h3>
             <h1>Test des variables d'environnement</h1>
-            <p>Service ID: {process.env.REACT_APP_SERVICE_ID}</p>
-            <p>Template ID: {process.env.REACT_APP_TEMPLATE_ID}</p>
-            <p>Public Key: {process.env.REACT_APP_PUBLIC_KEY}</p>
             <div className="contain-footer">
                 <div
                     className="container-info"
