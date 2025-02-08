@@ -48,9 +48,6 @@ const Contact = () => {
                     data-aos-duration="1500"
                 >
                     <div className="contact-info">
-                        <p>07 50 27 92 16</p>
-                    </div>
-                    <div className="contact-info">
                         <p>74800 St-Pierre-En-Faucigny, France</p>
                     </div>
                     <div className="contain-icon">
