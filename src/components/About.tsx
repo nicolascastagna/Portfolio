@@ -24,10 +24,11 @@ const About = () => {
                 <br />
                 <p>
                     Autodidacte, je me suis reconverti dans le développement web
-                    en 2021 après une formation initiale. Cette reconversion
-                    s’est concrétisée par une alternance en tant que développeur
-                    Full Stack, où j’ai acquis une expérience solide dans la
-                    conception et le développement d’applications web.
+                    en 2021 en suivant une première formation spécialisée dans
+                    ce domaine. Cette reconversion s’est concrétisée par une
+                    alternance en tant que développeur Full Stack, où j’ai
+                    acquis une expérience solide dans la conception et le
+                    développement d’applications web.
                     <br />
                     <br />
                     Durant ces deux années d'alternance, j'ai contribué à
