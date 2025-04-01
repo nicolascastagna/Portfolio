@@ -156,7 +156,7 @@ const Header = () => {
                         data-aos-delay="1000"
                     >
                         <Link smooth to="/#projects">
-                            <CustomButton text="Projects" icon={ExternalLink} />
+                            <CustomButton text="Projets" icon={ExternalLink} />
                         </Link>
                         <Link smooth to="#contact">
                             <CustomButton text="Contact" icon={Mail} />
